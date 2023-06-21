@@ -47,14 +47,15 @@
                 display: flex;
                 justify-content: space-evenly;
                 margin: 25px 0;
+                align-items: center;
             }
            
             
             .rightsection{
-                width: 50%;
+                width: 60%;
                 margin-top: 20px;
                 font-size: 2.5rem;
-                
+                margin-left: 100px;
             }
             .rightsection{
                 color: rgb(213, 240, 61);
@@ -62,6 +63,24 @@
             .leftsection img{
                 width: 70%;
                 margin-top: 20px;
+                
+            }
+            .purple{
+                color: rgb(101, 13, 183);
+            }
+            .blue{
+                color: darkorchid;
+            }
+            nav ul li a{
+                text-decoration: wavy;
+                color: white;
+            }
+            nav ul li a:hover{
+                color: rgb(195, 241, 103);
+                font-size: 1.1rem;
+            }
+            #element{
+                color: rgba(101, 61, 32, 0.845);
             }
         </style>
     </head>
@@ -71,11 +90,12 @@
                 <div class="left">YUJI PORTFOLIO</div>
                 <div class="right">
                     <ul>
-                    <li>home</li>
-                <li>about me</li>
-            <li>mine projects</li>
-            <li>achievement</li>
-        <li>contact me</li>
+                    <li><a href="/">home</a></li>
+                <li><a href="/">about me</a></li>
+                <li><a href="/">services</a></li>
+            <li><a href="/">my projects</a></li>
+            <li><a href="/">achievements</a></li>
+        <li><a href="/">contacts</a></li>
         </ul>
                  </div>
             </nav>
@@ -83,12 +103,23 @@
           <main>
             <section class="firstsection">
             <div class="leftsection"><img src="wd.png.png" alt=""></div>
-            <div class="rightsection">Welcome Here
+            <div class="rightsection"><span class="purple">Welcome Here</span>
                 <div>To The </div>
                 <div>Portfolio of A </div>
-                <div>WEB DEVELOPER</div>
+                <span id="element"></span>
             </div>
             </section>
+            <section class="second">
+                <hr> 
+            </section>
+            </section>
           </main>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed('#element', {
+              strings: ['<i>GRAPHICS DESINGER</i>', '<b>CODING EXPERT</b>', 'GAME DEVELOPER', '<u>WEB DEVELOPER</u>'],
+              typeSpeed: 50,
+            });
+          </script>
     </body>
 </html>
